@@ -27,6 +27,9 @@ public class AutoCar extends  AbstractCar{
        if(command.equals("forward")){
            goForward();
        }
+        if(command.equals("back")){
+            goBack();
+        }
        if(command.equals("turnClockwise")){
            turnClockwise();
        }
@@ -58,6 +61,37 @@ public class AutoCar extends  AbstractCar{
             }
         }
         if(this.orientation.equalsIgnoreCase("WEST")){
+            if(this.positionX<=1){
+                throw new IndexOutOfBoundsException();
+            }else {
+                this.positionX = this.positionX-1;
+            }
+        }
+    }
+    public void  goBack(){
+        if(this.orientation.equalsIgnoreCase("SOUTH")){
+            if(this.positionY>parkWidth){
+                throw new IndexOutOfBoundsException();
+            }else {
+                this.positionY = this.positionY+1;
+            }
+        }
+        if(this.orientation.equalsIgnoreCase("WEST"))
+        {
+            if(this.positionX>parkLength){
+                throw new IndexOutOfBoundsException();
+            }else {
+                this.positionX = this.positionX+1;
+            }
+        }
+        if(this.orientation.equalsIgnoreCase("NORTH")){
+            if(this.positionY<=1){
+                throw new IndexOutOfBoundsException();
+            }else {
+                this.positionY = this.positionY-1;
+            }
+        }
+        if(this.orientation.equalsIgnoreCase("EAST")){
             if(this.positionX<=1){
                 throw new IndexOutOfBoundsException();
             }else {
