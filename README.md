@@ -37,16 +37,27 @@ Example:
 ?
 (Y)
   +---+---+---+---+
+  
 4 |   |   |   |   |
+
   +---+---+---+---+
+  
 3 |   |   |   |   |     N 
+
   +---+---+---+---+ W <-|-> E
+  
 2 |   |   |   |   |     S
+
   +---+---+---+---+
+  
 1 | C |   |   |   |
+
   +---+---+---+---+
+  
     1   2   3   4 (X)
+    
 ?
+
 Acceptance Criteria:
 - Given the Car is in position X = 1 and Y = 1 and facing North, when the Car turns clockwise, then the Car is still in the same position but is now facing East
 - Given the Car is in position X = 1 and Y = 1 and facing North, when the Car moves forward, then the Car is still facing North but is now in position X = 1 and Y = 2
