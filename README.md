@@ -36,6 +36,7 @@ Example:
 - A simple illustration of the exercise with a car initially positioned at X = 1 and Y = 1 and facing North would look like this on a car park with dimension 4x4:
 ?
 (Y)
+
   +---+---+---+---+
   
 4 |   |   |   |   |
